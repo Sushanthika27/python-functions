@@ -1,0 +1,20 @@
+items = (
+      ("Pen", 10, 10),
+      ("Book", 100, 5),
+      ("Bag", 500, 2)
+      )
+total = 0
+for i in items:
+   subtotal = i[1] * i[2]
+   print(i[0], "subtotal =", subtotal)
+   total = total + subtotal
+print("Total =", total)
+if total > 3000:
+   discount = total * 0.10
+else:
+   discount = 0
+total = total - discount
+gst = total * 0.05
+final = total + gst
+print("gst=",gst)
+print("Final amount =", final)
