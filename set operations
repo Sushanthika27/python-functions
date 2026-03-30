@@ -1,0 +1,19 @@
+def sunion(s1,s2):
+   return s1|s2
+def sintersection(s1,s2):
+   return s1&s2
+def sdifference(s1,s2):
+   return s1-s2
+def ssymmdiff(s1,s2):
+   return s1^s2
+
+
+   import set_module
+s1={1,2,3,4}
+s2={3,4,5,6}
+print(s1)
+print(s2)
+print("union:",set_module.sunion(s1,s2))
+print("intersection:",set_module.sintersection(s1,s2))
+print("difference:",set_module.sdifference(s1,s2))
+print("symmetricdifference:",set_module.ssymmdiff(s1,s2))
